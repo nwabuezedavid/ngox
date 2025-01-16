@@ -1,0 +1,96 @@
+
+
+{% load static %}
+
+
+<div class="container-xxl py-5">
+    <div class="container">
+        <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+            <h6 class="text-primary">Hot products</h6>
+        </div>
+       
+  
+<div class="container mx-auto py-12 relative overflow-hidden">
+    <!-- Swiper Container -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            {% for member in team_members %}
+            <div class="swiper-slide">
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <div class="relative">
+                        <img class="w-full h-56 object-cover" src="{{ member.logo.url }}" alt="{{ member.name }}">
+                        <div class="absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-75"></div>
+                        <div class="absolute inset-0 flex items-end justify-center p-4">
+                            <div class="text-center">
+                                <h3 class="text-lg font-semibold text-white">{{ member.name }}</h3>
+                                {% if member.position %}
+                                <p class="text-sm text-gray-300">{{ member.position }}</p>
+                                {% endif %}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-center space-x-4">
+                            {% if member.facebook %}
+                            <a href="{{ member.facebook }}" class="text-gray-500 hover:text-blue-600 transition">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            {% endif %}
+                            {% if member.twitter %}
+                            <a href="{{ member.twitter }}" class="text-gray-500 hover:text-blue-400 transition">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            {% endif %}
+                            {% if member.email %}
+                            <a href="mailto:{{ member.email }}" class="text-gray-500 hover:text-red-500 transition">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+
+        <!-- Swiper Navigation -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+
+        <!-- Swiper Pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
+    
+    <script>
+        const swiper = new Swiper('.swiper-container', {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                },
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 30,
+                },
+                1024: {
+                    slidesPerView: 3,
+                    spaceBetween: 40,
+                },
+            },
+        });
+    </script>
+</div>
+
+</div>
+</div>

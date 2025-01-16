@@ -1,0 +1,1459 @@
+{% extends 'base.html' %} {% load static %} {% block content %}
+<div
+  data-elementor-type="wp-page"
+  data-elementor-id="4258"
+  class="elementor elementor-4258"
+  data-elementor-post-type="page"
+><link rel="stylesheet" id="wpo_min-header-0-css" href="https://arfh-ng.org/wp-content/cache/wpo-minify/1730210395/assets/wpo-minify-header-ff8f2d79.min.css" media="all">
+  <section
+    data-particle_enable="true"
+    class="eael-section-particles-7a1cb5b7 elementor-section elementor-top-section elementor-element elementor-element-7a1cb5b7 elementor-section-height-min-height elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-items-middle eael-particles-section"
+    data-eael_ptheme_source="presets"
+    data-preset_theme="nasa"
+    data-custom_style=""
+    data-particle-mobile-disabled="false"
+    data-id="7a1cb5b7"
+    data-element_type="section"
+    data-settings='{"background_background":"classic"}'
+    id="eael-section-particles-7a1cb5b7"
+  >
+    <div class="elementor-background-overlay"></div>
+    <div class="elementor-container elementor-column-gap-default">
+      <div
+        class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-227b2de9"
+        data-id="227b2de9"
+        data-element_type="column"
+      >
+        <div class="elementor-widget-wrap elementor-element-populated">
+          <div
+            class="elementor-element elementor-element-1315339a elementor-invisible elementor-widget elementor-widget-heading"
+            data-id="1315339a"
+            data-element_type="widget"
+            data-settings='{"_animation":"fadeInDown","_animation_delay":300}'
+            data-widget_type="heading.default"
+          >
+            <div class="elementor-widget-container">
+              <style>
+                /*! elementor - v3.23.0 - 05-08-2024 */
+                .elementor-heading-title {
+                  padding: 0;
+                  margin: 0;
+                  line-height: 1;
+                }
+                .elementor-widget-heading
+                  .elementor-heading-title[class*="elementor-size-"]
+                  > a {
+                  color: inherit;
+                  font-size: inherit;
+                  line-height: inherit;
+                }
+                .elementor-widget-heading
+                  .elementor-heading-title.elementor-size-small {
+                  font-size: 15px;
+                }
+                .elementor-widget-heading
+                  .elementor-heading-title.elementor-size-medium {
+                  font-size: 19px;
+                }
+                .elementor-widget-heading
+                  .elementor-heading-title.elementor-size-large {
+                  font-size: 29px;
+                }
+                .elementor-widget-heading
+                  .elementor-heading-title.elementor-size-xl {
+                  font-size: 39px;
+                }
+                .elementor-widget-heading
+                  .elementor-heading-title.elementor-size-xxl {
+                  font-size: 59px;
+                }
+              </style>
+              <h1 class="elementor-heading-title elementor-size-default">
+                Press Releases
+              </h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <canvas
+      class="particles-js-canvas-el"
+      width="1894"
+      height="354"
+      style="width: 100%; height: 100%"
+    ></canvas>
+  </section>
+  <style>
+    .elementor-element-7a1cb5b7.eael-particles-section > canvas {
+      z-index: -1;
+      position: absolute;
+      top: 0;
+    }
+  </style>
+  <section
+    data-particle_enable="false"
+    data-particle-mobile-disabled="false"
+    class="elementor-section elementor-top-section elementor-element elementor-element-a8b47be elementor-hidden-tablet elementor-hidden-phone elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+    data-id="a8b47be"
+    data-element_type="section"
+  >
+    <div class="elementor-container elementor-column-gap-default">
+      <div
+        class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-b0291c2"
+        data-id="b0291c2"
+        data-element_type="column"
+      >
+        <div class="elementor-widget-wrap elementor-element-populated">
+          <div
+            class="elementor-element elementor-element-5b054db elementor-grid-1 elementor-posts--thumbnail-none elementor-grid-tablet-2 elementor-grid-mobile-1 elementor-widget elementor-widget-posts"
+            data-id="5b054db"
+            data-element_type="widget"
+            data-settings='{"classic_columns":"1","classic_row_gap":{"unit":"px","size":24,"sizes":[]},"classic_columns_tablet":"2","classic_columns_mobile":"1","classic_row_gap_tablet":{"unit":"px","size":"","sizes":[]},"classic_row_gap_mobile":{"unit":"px","size":"","sizes":[]}}'
+            data-widget_type="posts.classic"
+          >
+            <div class="elementor-widget-container">
+              <link
+                rel="stylesheet"
+                href="https://arfh-ng.org/wp-content/plugins/elementor-pro/assets/css/widget-posts.min.css"
+              />
+              <div
+                class="elementor-posts-container elementor-posts elementor-posts--skin-classic elementor-grid"
+              >
+
+              {% for i in Press %}
+                <article
+                  class="elementor-post elementor-grid-item post-9381 post type-post status-publish shadow shadow-[gray] !p-4 rounded format-standard hentry category-press-release"
+                >
+                  <div class="elementor-post__text">
+                    <h3 class="elementor-post__title">
+                      <a
+                        href="{% url 'Pressdetail' i.uuids %}"
+                      >
+                      {{i.title}}
+                      </a>
+                    </h3>
+                    <div class="elementor-post__meta-data">
+                      <span class="elementor-post-date"> {{i.date}}</span>
+                    </div>
+                    <div class="elementor-post__excerpt">
+                      <p>
+                        Opening Date:
+                        {{i.date}}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        Closing Date:
+                        {{i.cdatex}} <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        {{i.header}}”.
+                      </p>
+                    </div>
+
+                    <a
+                      class="elementor-post__read-more"
+                      href="{% url 'Pressdetail' i.uuids %}"
+                      aria-label="{{i.header}}"
+                    >
+                      Continue Reading »
+                    </a>
+                  </div>
+                </article>
+                {% endfor %}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-05deb5c"
+        data-id="05deb5c"
+        data-element_type="column"
+      >
+        <div
+          class="elementor-widget-wrap elementor-element-populated elementor-motion-effects-parent"
+        >
+          <section
+            data-particle_enable="false"
+            data-particle-mobile-disabled="false"
+            class="elementor-section elementor-inner-section elementor-element elementor-element-cb59255 elementor-hidden-phone elementor-hidden-tablet elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-motion-effects-element elementor-sticky elementor-sticky--active elementor-section--handles-inside elementor-sticky--effects"
+            data-id="cb59255"
+            data-element_type="section"
+            data-settings='{"motion_fx_motion_fx_scrolling":"yes","motion_fx_opacity_effect":"yes","motion_fx_opacity_direction":"in-out","motion_fx_opacity_range":{"unit":"%","size":"","sizes":{"start":70,"end":100}},"motion_fx_range":"viewport","sticky":"top","sticky_offset":120,"motion_fx_opacity_level":{"unit":"px","size":100,"sizes":[]},"motion_fx_devices":["desktop","tablet","mobile"],"sticky_on":["desktop","tablet","mobile"],"sticky_effects_offset":0}'
+            style="
+              --e-transform-transition-duration: 100ms;
+              position: fixed;
+              width: 320.375px;
+              margin-top: 0px;
+              margin-bottom: 0px;
+              top: 120px;
+              inset-inline-start: 788.667px;
+              opacity: 1;
+              will-change: opacity;
+            "
+          >
+            <div class="elementor-container elementor-column-gap-default">
+              <div
+                class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-4d9f73c"
+                data-id="4d9f73c"
+                data-element_type="column"
+              >
+                <div class="elementor-widget-wrap elementor-element-populated">
+                  <div
+                    class="elementor-element elementor-element-9acfe43 elementor-widget elementor-widget-heading"
+                    data-id="9acfe43"
+                    data-element_type="widget"
+                    data-widget_type="heading.default"
+                  >
+                    <div class="elementor-widget-container">
+                      <h2
+                        class="elementor-heading-title elementor-size-default"
+                      >
+                        {{site.name}}Media Centre
+                      </h2>
+                    </div>
+                  </div>
+                  <div
+                    class="elementor-element elementor-element-d751480 elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list"
+                    data-id="d751480"
+                    data-element_type="widget"
+                    data-widget_type="icon-list.default"
+                  >
+                    <div class="elementor-widget-container">
+                      <link
+                        rel="stylesheet"
+                        href="https://arfh-ng.org/wp-content/plugins/elementor/assets/css/widget-icon-list.min.css"
+                      />
+                      <ul class="elementor-icon-list-items">
+                        <li class="elementor-icon-list-item">
+                          <a href="{% url 'newstory' %}">
+                            <span class="elementor-icon-list-icon">
+                              <svg
+                                aria-hidden="true"
+                                class="e-font-icon-svg e-fas-bullhorn"
+                                viewBox="0 0 576 512"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M576 240c0-23.63-12.95-44.04-32-55.12V32.01C544 23.26 537.02 0 512 0c-7.12 0-14.19 2.38-19.98 7.02l-85.03 68.03C364.28 109.19 310.66 128 256 128H64c-35.35 0-64 28.65-64 64v96c0 35.35 28.65 64 64 64h33.7c-1.39 10.48-2.18 21.14-2.18 32 0 39.77 9.26 77.35 25.56 110.94 5.19 10.69 16.52 17.06 28.4 17.06h74.28c26.05 0 41.69-29.84 25.9-50.56-16.4-21.52-26.15-48.36-26.15-77.44 0-11.11 1.62-21.79 4.41-32H256c54.66 0 108.28 18.81 150.98 52.95l85.03 68.03a32.023 32.023 0 0 0 19.98 7.02c24.92 0 32-22.78 32-32V295.13C563.05 284.04 576 263.63 576 240zm-96 141.42l-33.05-26.44C392.95 311.78 325.12 288 256 288v-96c69.12 0 136.95-23.78 190.95-66.98L480 98.58v282.84z"
+                                ></path>
+                              </svg>
+                            </span>
+                            <span class="elementor-icon-list-text"
+                              >News &amp; Stories</span
+                            >
+                          </a>
+                        </li>
+                        <li class="elementor-icon-list-item">
+                          <a href="{% url 'press' %}">
+                            <span class="elementor-icon-list-icon">
+                              <svg
+                                aria-hidden="true"
+                                class="e-font-icon-svg e-far-newspaper"
+                                viewBox="0 0 576 512"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M552 64H112c-20.858 0-38.643 13.377-45.248 32H24c-13.255 0-24 10.745-24 24v272c0 30.928 25.072 56 56 56h496c13.255 0 24-10.745 24-24V88c0-13.255-10.745-24-24-24zM48 392V144h16v248c0 4.411-3.589 8-8 8s-8-3.589-8-8zm480 8H111.422c.374-2.614.578-5.283.578-8V112h416v288zM172 280h136c6.627 0 12-5.373 12-12v-96c0-6.627-5.373-12-12-12H172c-6.627 0-12 5.373-12 12v96c0 6.627 5.373 12 12 12zm28-80h80v40h-80v-40zm-40 140v-24c0-6.627 5.373-12 12-12h136c6.627 0 12 5.373 12 12v24c0 6.627-5.373 12-12 12H172c-6.627 0-12-5.373-12-12zm192 0v-24c0-6.627 5.373-12 12-12h104c6.627 0 12 5.373 12 12v24c0 6.627-5.373 12-12 12H364c-6.627 0-12-5.373-12-12zm0-144v-24c0-6.627 5.373-12 12-12h104c6.627 0 12 5.373 12 12v24c0 6.627-5.373 12-12 12H364c-6.627 0-12-5.373-12-12zm0 72v-24c0-6.627 5.373-12 12-12h104c6.627 0 12 5.373 12 12v24c0 6.627-5.373 12-12 12H364c-6.627 0-12-5.373-12-12z"
+                                ></path>
+                              </svg>
+                            </span>
+                            <span class="elementor-icon-list-text"
+                              >Press Releases</span
+                            >
+                          </a>
+                        </li>
+                        <li class="elementor-icon-list-item">
+                          <a href="{% url 'report' %}">
+                            <span class="elementor-icon-list-icon">
+                              <svg
+                                aria-hidden="true"
+                                class="e-font-icon-svg e-fas-chart-line"
+                                viewBox="0 0 512 512"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M496 384H64V80c0-8.84-7.16-16-16-16H16C7.16 64 0 71.16 0 80v336c0 17.67 14.33 32 32 32h464c8.84 0 16-7.16 16-16v-32c0-8.84-7.16-16-16-16zM464 96H345.94c-21.38 0-32.09 25.85-16.97 40.97l32.4 32.4L288 242.75l-73.37-73.37c-12.5-12.5-32.76-12.5-45.25 0l-68.69 68.69c-6.25 6.25-6.25 16.38 0 22.63l22.62 22.62c6.25 6.25 16.38 6.25 22.63 0L192 237.25l73.37 73.37c12.5 12.5 32.76 12.5 45.25 0l96-96 32.4 32.4c15.12 15.12 40.97 4.41 40.97-16.97V112c.01-8.84-7.15-16-15.99-16z"
+                                ></path>
+                              </svg>
+                            </span>
+                            <span class="elementor-icon-list-text"
+                              >Annual Reports</span
+                            >
+                          </a>
+                        </li>
+                        <li class="elementor-icon-list-item">
+                          <a href="{% url 'project' %}">
+                            <span class="elementor-icon-list-icon">
+                              <svg
+                                aria-hidden="true"
+                                class="e-font-icon-svg e-fas-chart-line"
+                                viewBox="0 0 512 512"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M496 384H64V80c0-8.84-7.16-16-16-16H16C7.16 64 0 71.16 0 80v336c0 17.67 14.33 32 32 32h464c8.84 0 16-7.16 16-16v-32c0-8.84-7.16-16-16-16zM464 96H345.94c-21.38 0-32.09 25.85-16.97 40.97l32.4 32.4L288 242.75l-73.37-73.37c-12.5-12.5-32.76-12.5-45.25 0l-68.69 68.69c-6.25 6.25-6.25 16.38 0 22.63l22.62 22.62c6.25 6.25 16.38 6.25 22.63 0L192 237.25l73.37 73.37c12.5 12.5 32.76 12.5 45.25 0l96-96 32.4 32.4c15.12 15.12 40.97 4.41 40.97-16.97V112c.01-8.84-7.15-16-15.99-16z"
+                                ></path>
+                              </svg>
+                            </span>
+                            <span class="elementor-icon-list-text"
+                              >Our Projects</span
+                            >
+                          </a>
+                        </li>
+                        <li class="elementor-icon-list-item">
+                          <a
+                            href="{% url 'projectupdate' %}"
+                          >
+                            <span class="elementor-icon-list-icon">
+                              <svg
+                                aria-hidden="true"
+                                class="e-font-icon-svg e-fas-chart-line"
+                                viewBox="0 0 512 512"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M496 384H64V80c0-8.84-7.16-16-16-16H16C7.16 64 0 71.16 0 80v336c0 17.67 14.33 32 32 32h464c8.84 0 16-7.16 16-16v-32c0-8.84-7.16-16-16-16zM464 96H345.94c-21.38 0-32.09 25.85-16.97 40.97l32.4 32.4L288 242.75l-73.37-73.37c-12.5-12.5-32.76-12.5-45.25 0l-68.69 68.69c-6.25 6.25-6.25 16.38 0 22.63l22.62 22.62c6.25 6.25 16.38 6.25 22.63 0L192 237.25l73.37 73.37c12.5 12.5 32.76 12.5 45.25 0l96-96 32.4 32.4c15.12 15.12 40.97 4.41 40.97-16.97V112c.01-8.84-7.15-16-15.99-16z"
+                                ></path>
+                              </svg>
+                            </span>
+                            <span class="elementor-icon-list-text"
+                              >Project Updates</span
+                            >
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section
+            data-particle_enable="false"
+            data-particle-mobile-disabled="false"
+            class="elementor-section elementor-inner-section elementor-element elementor-element-cb59255 elementor-hidden-phone elementor-hidden-tablet elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-motion-effects-element elementor-sticky elementor-sticky__spacer"
+            data-id="cb59255"
+            data-element_type="section"
+            data-settings='{"motion_fx_motion_fx_scrolling":"yes","motion_fx_opacity_effect":"yes","motion_fx_opacity_direction":"in-out","motion_fx_opacity_range":{"unit":"%","size":"","sizes":{"start":70,"end":100}},"motion_fx_range":"viewport","sticky":"top","sticky_offset":120,"motion_fx_opacity_level":{"unit":"px","size":100,"sizes":[]},"motion_fx_devices":["desktop","tablet","mobile"],"sticky_on":["desktop","tablet","mobile"],"sticky_effects_offset":0}'
+            style="
+              opacity: 1;
+              will-change: opacity;
+              --e-transform-transition-duration: 100ms;
+              visibility: hidden;
+              transition: none;
+              animation: auto ease 0s 1 normal none running none;
+            "
+          >
+            <div class="elementor-container elementor-column-gap-default">
+              <div
+                class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-4d9f73c"
+                data-id="4d9f73c"
+                data-element_type="column"
+              >
+                <div class="elementor-widget-wrap elementor-element-populated">
+                  <div
+                    class="elementor-element elementor-element-9acfe43 elementor-widget elementor-widget-heading"
+                    data-id="9acfe43"
+                    data-element_type="widget"
+                    data-widget_type="heading.default"
+                  >
+                    <div class="elementor-widget-container">
+                      <h2
+                        class="elementor-heading-title elementor-size-default"
+                      >
+                        {{site.name}} Media Centre
+                      </h2>
+                    </div>
+                  </div>
+                  <div
+                    class="elementor-element elementor-element-d751480 elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list"
+                    data-id="d751480"
+                    data-element_type="widget"
+                    data-widget_type="icon-list.default"
+                  >
+                    <div class="elementor-widget-container">
+                      <link
+                        rel="stylesheet"
+                        href="https://arfh-ng.org/wp-content/plugins/elementor/assets/css/widget-icon-list.min.css"
+                      />
+                      <ul class="elementor-icon-list-items">
+                        <li class="elementor-icon-list-item">
+                          <a href="https://arfh-ng.org/news-and-stories/">
+                            <span class="elementor-icon-list-icon">
+                              <svg
+                                aria-hidden="true"
+                                class="e-font-icon-svg e-fas-bullhorn"
+                                viewBox="0 0 576 512"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M576 240c0-23.63-12.95-44.04-32-55.12V32.01C544 23.26 537.02 0 512 0c-7.12 0-14.19 2.38-19.98 7.02l-85.03 68.03C364.28 109.19 310.66 128 256 128H64c-35.35 0-64 28.65-64 64v96c0 35.35 28.65 64 64 64h33.7c-1.39 10.48-2.18 21.14-2.18 32 0 39.77 9.26 77.35 25.56 110.94 5.19 10.69 16.52 17.06 28.4 17.06h74.28c26.05 0 41.69-29.84 25.9-50.56-16.4-21.52-26.15-48.36-26.15-77.44 0-11.11 1.62-21.79 4.41-32H256c54.66 0 108.28 18.81 150.98 52.95l85.03 68.03a32.023 32.023 0 0 0 19.98 7.02c24.92 0 32-22.78 32-32V295.13C563.05 284.04 576 263.63 576 240zm-96 141.42l-33.05-26.44C392.95 311.78 325.12 288 256 288v-96c69.12 0 136.95-23.78 190.95-66.98L480 98.58v282.84z"
+                                ></path>
+                              </svg>
+                            </span>
+                            <span class="elementor-icon-list-text"
+                              >News &amp; Stories</span
+                            >
+                          </a>
+                        </li>
+                        <li class="elementor-icon-list-item">
+                          <a href="https://arfh-ng.org/press-releases/">
+                            <span class="elementor-icon-list-icon">
+                              <svg
+                                aria-hidden="true"
+                                class="e-font-icon-svg e-far-newspaper"
+                                viewBox="0 0 576 512"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M552 64H112c-20.858 0-38.643 13.377-45.248 32H24c-13.255 0-24 10.745-24 24v272c0 30.928 25.072 56 56 56h496c13.255 0 24-10.745 24-24V88c0-13.255-10.745-24-24-24zM48 392V144h16v248c0 4.411-3.589 8-8 8s-8-3.589-8-8zm480 8H111.422c.374-2.614.578-5.283.578-8V112h416v288zM172 280h136c6.627 0 12-5.373 12-12v-96c0-6.627-5.373-12-12-12H172c-6.627 0-12 5.373-12 12v96c0 6.627 5.373 12 12 12zm28-80h80v40h-80v-40zm-40 140v-24c0-6.627 5.373-12 12-12h136c6.627 0 12 5.373 12 12v24c0 6.627-5.373 12-12 12H172c-6.627 0-12-5.373-12-12zm192 0v-24c0-6.627 5.373-12 12-12h104c6.627 0 12 5.373 12 12v24c0 6.627-5.373 12-12 12H364c-6.627 0-12-5.373-12-12zm0-144v-24c0-6.627 5.373-12 12-12h104c6.627 0 12 5.373 12 12v24c0 6.627-5.373 12-12 12H364c-6.627 0-12-5.373-12-12zm0 72v-24c0-6.627 5.373-12 12-12h104c6.627 0 12 5.373 12 12v24c0 6.627-5.373 12-12 12H364c-6.627 0-12-5.373-12-12z"
+                                ></path>
+                              </svg>
+                            </span>
+                            <span class="elementor-icon-list-text"
+                              >Press Releases</span
+                            >
+                          </a>
+                        </li>
+                        <li class="elementor-icon-list-item">
+                          <a href="https://arfh-ng.org/annual-reports/">
+                            <span class="elementor-icon-list-icon">
+                              <svg
+                                aria-hidden="true"
+                                class="e-font-icon-svg e-fas-chart-line"
+                                viewBox="0 0 512 512"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M496 384H64V80c0-8.84-7.16-16-16-16H16C7.16 64 0 71.16 0 80v336c0 17.67 14.33 32 32 32h464c8.84 0 16-7.16 16-16v-32c0-8.84-7.16-16-16-16zM464 96H345.94c-21.38 0-32.09 25.85-16.97 40.97l32.4 32.4L288 242.75l-73.37-73.37c-12.5-12.5-32.76-12.5-45.25 0l-68.69 68.69c-6.25 6.25-6.25 16.38 0 22.63l22.62 22.62c6.25 6.25 16.38 6.25 22.63 0L192 237.25l73.37 73.37c12.5 12.5 32.76 12.5 45.25 0l96-96 32.4 32.4c15.12 15.12 40.97 4.41 40.97-16.97V112c.01-8.84-7.15-16-15.99-16z"
+                                ></path>
+                              </svg>
+                            </span>
+                            <span class="elementor-icon-list-text"
+                              >Annual Reports</span
+                            >
+                          </a>
+                        </li>
+                        <li class="elementor-icon-list-item">
+                          <a href="https://arfh-ng.org/projects/">
+                            <span class="elementor-icon-list-icon">
+                              <svg
+                                aria-hidden="true"
+                                class="e-font-icon-svg e-fas-chart-line"
+                                viewBox="0 0 512 512"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M496 384H64V80c0-8.84-7.16-16-16-16H16C7.16 64 0 71.16 0 80v336c0 17.67 14.33 32 32 32h464c8.84 0 16-7.16 16-16v-32c0-8.84-7.16-16-16-16zM464 96H345.94c-21.38 0-32.09 25.85-16.97 40.97l32.4 32.4L288 242.75l-73.37-73.37c-12.5-12.5-32.76-12.5-45.25 0l-68.69 68.69c-6.25 6.25-6.25 16.38 0 22.63l22.62 22.62c6.25 6.25 16.38 6.25 22.63 0L192 237.25l73.37 73.37c12.5 12.5 32.76 12.5 45.25 0l96-96 32.4 32.4c15.12 15.12 40.97 4.41 40.97-16.97V112c.01-8.84-7.15-16-15.99-16z"
+                                ></path>
+                              </svg>
+                            </span>
+                            <span class="elementor-icon-list-text"
+                              >Our Projects</span
+                            >
+                          </a>
+                        </li>
+                        <li class="elementor-icon-list-item">
+                          <a
+                            href="https://arfh-ng.org/category/project-update/"
+                          >
+                            <span class="elementor-icon-list-icon">
+                              <svg
+                                aria-hidden="true"
+                                class="e-font-icon-svg e-fas-chart-line"
+                                viewBox="0 0 512 512"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M496 384H64V80c0-8.84-7.16-16-16-16H16C7.16 64 0 71.16 0 80v336c0 17.67 14.33 32 32 32h464c8.84 0 16-7.16 16-16v-32c0-8.84-7.16-16-16-16zM464 96H345.94c-21.38 0-32.09 25.85-16.97 40.97l32.4 32.4L288 242.75l-73.37-73.37c-12.5-12.5-32.76-12.5-45.25 0l-68.69 68.69c-6.25 6.25-6.25 16.38 0 22.63l22.62 22.62c6.25 6.25 16.38 6.25 22.63 0L192 237.25l73.37 73.37c12.5 12.5 32.76 12.5 45.25 0l96-96 32.4 32.4c15.12 15.12 40.97 4.41 40.97-16.97V112c.01-8.84-7.15-16-15.99-16z"
+                                ></path>
+                              </svg>
+                            </span>
+                            <span class="elementor-icon-list-text"
+                              >Project Updates</span
+                            >
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section
+    data-particle_enable="false"
+    data-particle-mobile-disabled="false"
+    class="elementor-section elementor-top-section elementor-element elementor-element-fce96a7 elementor-hidden-desktop elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+    data-id="fce96a7"
+    data-element_type="section"
+  >
+    <div class="elementor-container elementor-column-gap-default">
+      <div
+        class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-39f0544"
+        data-id="39f0544"
+        data-element_type="column"
+      >
+        <div class="elementor-widget-wrap elementor-element-populated">
+          <div
+            class="elementor-element elementor-element-3f153ff elementor-grid-1 elementor-posts--thumbnail-none elementor-grid-tablet-1 elementor-grid-mobile-1 elementor-widget elementor-widget-posts"
+            data-id="3f153ff"
+            data-element_type="widget"
+            data-settings='{"classic_columns":"1","classic_row_gap":{"unit":"px","size":24,"sizes":[]},"classic_columns_tablet":"1","classic_columns_mobile":"1","classic_row_gap_tablet":{"unit":"px","size":"","sizes":[]},"classic_row_gap_mobile":{"unit":"px","size":"","sizes":[]}}'
+            data-widget_type="posts.classic"
+          >
+            <div class="elementor-widget-container">
+              <div
+                class="elementor-posts-container elementor-posts elementor-posts--skin-classic elementor-grid"
+              >
+
+              {% for i in Press %}
+
+                <article
+                  class="elementor-post elementor-grid-item post-9381 post type-post status-publish format-standard hentry category-press-release"
+                >
+                  <div class="elementor-post__text">
+                    <h3 class="elementor-post__title">
+                      <a
+                        href="https://arfh-ng.org/press-release/request-for-quotation-for-the-printing-of-branded-t-shirts-and-hand-wrist-bands-2/"
+                      >
+                      {{i.title}}
+                      </a>
+                    </h3>
+                    <div class="elementor-post__meta-data">
+                      <span class="elementor-post-date"> {{i.date}} </span>
+                    </div>
+                    <div class="elementor-post__excerpt">
+                      <p>
+                        Opening Date:
+                        {{i.date}}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        Closing Date:
+                        {{i.cdatex}} <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        {{i.header}}”.
+                      </p>
+                    </div>
+
+                    <a
+                      class="elementor-post__read-more"
+                      href="{% url 'Pressdetail' i.uuids %}"
+                      aria-label="Read more about REQUEST FOR QUOTATION FOR THE PRINTING OF BRANDED T-SHIRTS AND HAND WRIST BANDS"
+                    >
+                      Continue Reading »
+                    </a>
+                  </div>
+                </article>
+                 {% endfor %}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-b3e9436"
+        data-id="b3e9436"
+        data-element_type="column"
+      >
+        <div
+          class="elementor-widget-wrap elementor-element-populated elementor-motion-effects-parent"
+        >
+          <section
+            data-particle_enable="false"
+            data-particle-mobile-disabled="false"
+            class="elementor-section elementor-inner-section elementor-element elementor-element-3522697 elementor-hidden-phone elementor-hidden-tablet elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-motion-effects-element elementor-sticky elementor-sticky--active elementor-section--handles-inside elementor-sticky--effects"
+            data-id="3522697"
+            data-element_type="section"
+            data-settings='{"motion_fx_motion_fx_scrolling":"yes","motion_fx_opacity_effect":"yes","motion_fx_opacity_direction":"in-out","motion_fx_opacity_range":{"unit":"%","size":"","sizes":{"start":30,"end":80}},"motion_fx_range":"viewport","sticky":"top","sticky_offset":120,"motion_fx_opacity_level":{"unit":"px","size":10,"sizes":[]},"motion_fx_devices":["desktop","tablet","mobile"],"sticky_on":["desktop","tablet","mobile"],"sticky_effects_offset":0}'
+            style="
+              --e-transform-transition-duration: 100ms;
+              position: fixed;
+              width: 100px;
+              margin-top: 0px;
+              margin-bottom: 0px;
+              top: 120px;
+              opacity: 0;
+              will-change: opacity;
+            "
+          >
+            <div class="elementor-container elementor-column-gap-default">
+              <div
+                class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-8c5e801"
+                data-id="8c5e801"
+                data-element_type="column"
+              >
+                <div class="elementor-widget-wrap elementor-element-populated">
+                  <div
+                    class="elementor-element elementor-element-531221d elementor-widget elementor-widget-heading"
+                    data-id="531221d"
+                    data-element_type="widget"
+                    data-widget_type="heading.default"
+                  >
+                    <div class="elementor-widget-container">
+                      <h2
+                        class="elementor-heading-title elementor-size-default"
+                      >
+                        {{site.name}}Media Centre
+                      </h2>
+                    </div>
+                  </div>
+                  <div
+                    class="elementor-element elementor-element-34b8ebd elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list"
+                    data-id="34b8ebd"
+                    data-element_type="widget"
+                    data-widget_type="icon-list.default"
+                  >
+                    <div class="elementor-widget-container">
+                      <ul class="elementor-icon-list-items">
+                        <li class="elementor-icon-list-item">
+                          <a href="{% url 'newstory' %}">
+                            <span class="elementor-icon-list-icon">
+                              <svg
+                                aria-hidden="true"
+                                class="e-font-icon-svg e-fas-bullhorn"
+                                viewBox="0 0 576 512"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M576 240c0-23.63-12.95-44.04-32-55.12V32.01C544 23.26 537.02 0 512 0c-7.12 0-14.19 2.38-19.98 7.02l-85.03 68.03C364.28 109.19 310.66 128 256 128H64c-35.35 0-64 28.65-64 64v96c0 35.35 28.65 64 64 64h33.7c-1.39 10.48-2.18 21.14-2.18 32 0 39.77 9.26 77.35 25.56 110.94 5.19 10.69 16.52 17.06 28.4 17.06h74.28c26.05 0 41.69-29.84 25.9-50.56-16.4-21.52-26.15-48.36-26.15-77.44 0-11.11 1.62-21.79 4.41-32H256c54.66 0 108.28 18.81 150.98 52.95l85.03 68.03a32.023 32.023 0 0 0 19.98 7.02c24.92 0 32-22.78 32-32V295.13C563.05 284.04 576 263.63 576 240zm-96 141.42l-33.05-26.44C392.95 311.78 325.12 288 256 288v-96c69.12 0 136.95-23.78 190.95-66.98L480 98.58v282.84z"
+                                ></path>
+                              </svg>
+                            </span>
+                            <span class="elementor-icon-list-text"
+                              >News &amp; Stories</span
+                            >
+                          </a>
+                        </li>
+                        <li class="elementor-icon-list-item">
+                          <a href="{% url 'press' %}">
+                            <span class="elementor-icon-list-icon">
+                              <svg
+                                aria-hidden="true"
+                                class="e-font-icon-svg e-far-newspaper"
+                                viewBox="0 0 576 512"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M552 64H112c-20.858 0-38.643 13.377-45.248 32H24c-13.255 0-24 10.745-24 24v272c0 30.928 25.072 56 56 56h496c13.255 0 24-10.745 24-24V88c0-13.255-10.745-24-24-24zM48 392V144h16v248c0 4.411-3.589 8-8 8s-8-3.589-8-8zm480 8H111.422c.374-2.614.578-5.283.578-8V112h416v288zM172 280h136c6.627 0 12-5.373 12-12v-96c0-6.627-5.373-12-12-12H172c-6.627 0-12 5.373-12 12v96c0 6.627 5.373 12 12 12zm28-80h80v40h-80v-40zm-40 140v-24c0-6.627 5.373-12 12-12h136c6.627 0 12 5.373 12 12v24c0 6.627-5.373 12-12 12H172c-6.627 0-12-5.373-12-12zm192 0v-24c0-6.627 5.373-12 12-12h104c6.627 0 12 5.373 12 12v24c0 6.627-5.373 12-12 12H364c-6.627 0-12-5.373-12-12zm0-144v-24c0-6.627 5.373-12 12-12h104c6.627 0 12 5.373 12 12v24c0 6.627-5.373 12-12 12H364c-6.627 0-12-5.373-12-12zm0 72v-24c0-6.627 5.373-12 12-12h104c6.627 0 12 5.373 12 12v24c0 6.627-5.373 12-12 12H364c-6.627 0-12-5.373-12-12z"
+                                ></path>
+                              </svg>
+                            </span>
+                            <span class="elementor-icon-list-text"
+                              >Press Releases</span
+                            >
+                          </a>
+                        </li>
+                        <li class="elementor-icon-list-item">
+                          <a href="https://arfh-ng.org/annual-reports/">
+                            <span class="elementor-icon-list-icon">
+                              <svg
+                                aria-hidden="true"
+                                class="e-font-icon-svg e-fas-chart-line"
+                                viewBox="0 0 512 512"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M496 384H64V80c0-8.84-7.16-16-16-16H16C7.16 64 0 71.16 0 80v336c0 17.67 14.33 32 32 32h464c8.84 0 16-7.16 16-16v-32c0-8.84-7.16-16-16-16zM464 96H345.94c-21.38 0-32.09 25.85-16.97 40.97l32.4 32.4L288 242.75l-73.37-73.37c-12.5-12.5-32.76-12.5-45.25 0l-68.69 68.69c-6.25 6.25-6.25 16.38 0 22.63l22.62 22.62c6.25 6.25 16.38 6.25 22.63 0L192 237.25l73.37 73.37c12.5 12.5 32.76 12.5 45.25 0l96-96 32.4 32.4c15.12 15.12 40.97 4.41 40.97-16.97V112c.01-8.84-7.15-16-15.99-16z"
+                                ></path>
+                              </svg>
+                            </span>
+                            <span class="elementor-icon-list-text"
+                              >Annual Reports</span
+                            >
+                          </a>
+                        </li>
+                        <li class="elementor-icon-list-item">
+                          <a href="https://arfh-ng.org/projects/">
+                            <span class="elementor-icon-list-icon">
+                              <svg
+                                aria-hidden="true"
+                                class="e-font-icon-svg e-fas-chart-line"
+                                viewBox="0 0 512 512"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M496 384H64V80c0-8.84-7.16-16-16-16H16C7.16 64 0 71.16 0 80v336c0 17.67 14.33 32 32 32h464c8.84 0 16-7.16 16-16v-32c0-8.84-7.16-16-16-16zM464 96H345.94c-21.38 0-32.09 25.85-16.97 40.97l32.4 32.4L288 242.75l-73.37-73.37c-12.5-12.5-32.76-12.5-45.25 0l-68.69 68.69c-6.25 6.25-6.25 16.38 0 22.63l22.62 22.62c6.25 6.25 16.38 6.25 22.63 0L192 237.25l73.37 73.37c12.5 12.5 32.76 12.5 45.25 0l96-96 32.4 32.4c15.12 15.12 40.97 4.41 40.97-16.97V112c.01-8.84-7.15-16-15.99-16z"
+                                ></path>
+                              </svg>
+                            </span>
+                            <span class="elementor-icon-list-text"
+                              >Our Projects</span
+                            >
+                          </a>
+                        </li>
+                        <li class="elementor-icon-list-item">
+                          <a
+                            href="https://arfh-ng.org/category/project-update/"
+                          >
+                            <span class="elementor-icon-list-icon">
+                              <svg
+                                aria-hidden="true"
+                                class="e-font-icon-svg e-fas-chart-line"
+                                viewBox="0 0 512 512"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M496 384H64V80c0-8.84-7.16-16-16-16H16C7.16 64 0 71.16 0 80v336c0 17.67 14.33 32 32 32h464c8.84 0 16-7.16 16-16v-32c0-8.84-7.16-16-16-16zM464 96H345.94c-21.38 0-32.09 25.85-16.97 40.97l32.4 32.4L288 242.75l-73.37-73.37c-12.5-12.5-32.76-12.5-45.25 0l-68.69 68.69c-6.25 6.25-6.25 16.38 0 22.63l22.62 22.62c6.25 6.25 16.38 6.25 22.63 0L192 237.25l73.37 73.37c12.5 12.5 32.76 12.5 45.25 0l96-96 32.4 32.4c15.12 15.12 40.97 4.41 40.97-16.97V112c.01-8.84-7.15-16-15.99-16z"
+                                ></path>
+                              </svg>
+                            </span>
+                            <span class="elementor-icon-list-text"
+                              >Project Updates</span
+                            >
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section
+            data-particle_enable="false"
+            data-particle-mobile-disabled="false"
+            class="elementor-section elementor-inner-section elementor-element elementor-element-3522697 elementor-hidden-phone elementor-hidden-tablet elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-motion-effects-element elementor-sticky elementor-sticky__spacer"
+            data-id="3522697"
+            data-element_type="section"
+            data-settings='{"motion_fx_motion_fx_scrolling":"yes","motion_fx_opacity_effect":"yes","motion_fx_opacity_direction":"in-out","motion_fx_opacity_range":{"unit":"%","size":"","sizes":{"start":30,"end":80}},"motion_fx_range":"viewport","sticky":"top","sticky_offset":120,"motion_fx_opacity_level":{"unit":"px","size":10,"sizes":[]},"motion_fx_devices":["desktop","tablet","mobile"],"sticky_on":["desktop","tablet","mobile"],"sticky_effects_offset":0}'
+            style="
+              opacity: 0;
+              will-change: opacity;
+              --e-transform-transition-duration: 100ms;
+              visibility: hidden;
+              transition: none;
+              animation: auto ease 0s 1 normal none running none;
+            "
+          >
+            <div class="elementor-container elementor-column-gap-default">
+              <div
+                class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-8c5e801"
+                data-id="8c5e801"
+                data-element_type="column"
+              >
+                <div class="elementor-widget-wrap elementor-element-populated">
+                  <div
+                    class="elementor-element elementor-element-531221d elementor-widget elementor-widget-heading"
+                    data-id="531221d"
+                    data-element_type="widget"
+                    data-widget_type="heading.default"
+                  >
+                    <div class="elementor-widget-container">
+                      <h2
+                        class="elementor-heading-title elementor-size-default"
+                      >
+                        {{site.name}}Media Centre
+                      </h2>
+                    </div>
+                  </div>
+                  <div
+                    class="elementor-element elementor-element-34b8ebd elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list"
+                    data-id="34b8ebd"
+                    data-element_type="widget"
+                    data-widget_type="icon-list.default"
+                  >
+                    <div class="elementor-widget-container">
+                      <ul class="elementor-icon-list-items">
+                        <li class="elementor-icon-list-item">
+                          <a href="{% url 'newstory' %}">
+                            <span class="elementor-icon-list-icon">
+                              <svg
+                                aria-hidden="true"
+                                class="e-font-icon-svg e-fas-bullhorn"
+                                viewBox="0 0 576 512"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M576 240c0-23.63-12.95-44.04-32-55.12V32.01C544 23.26 537.02 0 512 0c-7.12 0-14.19 2.38-19.98 7.02l-85.03 68.03C364.28 109.19 310.66 128 256 128H64c-35.35 0-64 28.65-64 64v96c0 35.35 28.65 64 64 64h33.7c-1.39 10.48-2.18 21.14-2.18 32 0 39.77 9.26 77.35 25.56 110.94 5.19 10.69 16.52 17.06 28.4 17.06h74.28c26.05 0 41.69-29.84 25.9-50.56-16.4-21.52-26.15-48.36-26.15-77.44 0-11.11 1.62-21.79 4.41-32H256c54.66 0 108.28 18.81 150.98 52.95l85.03 68.03a32.023 32.023 0 0 0 19.98 7.02c24.92 0 32-22.78 32-32V295.13C563.05 284.04 576 263.63 576 240zm-96 141.42l-33.05-26.44C392.95 311.78 325.12 288 256 288v-96c69.12 0 136.95-23.78 190.95-66.98L480 98.58v282.84z"
+                                ></path>
+                              </svg>
+                            </span>
+                            <span class="elementor-icon-list-text"
+                              >News &amp; Stories</span
+                            >
+                          </a>
+                        </li>
+                        <li class="elementor-icon-list-item">
+                          <a href="{% url 'press' %}">
+                            <span class="elementor-icon-list-icon">
+                              <svg
+                                aria-hidden="true"
+                                class="e-font-icon-svg e-far-newspaper"
+                                viewBox="0 0 576 512"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M552 64H112c-20.858 0-38.643 13.377-45.248 32H24c-13.255 0-24 10.745-24 24v272c0 30.928 25.072 56 56 56h496c13.255 0 24-10.745 24-24V88c0-13.255-10.745-24-24-24zM48 392V144h16v248c0 4.411-3.589 8-8 8s-8-3.589-8-8zm480 8H111.422c.374-2.614.578-5.283.578-8V112h416v288zM172 280h136c6.627 0 12-5.373 12-12v-96c0-6.627-5.373-12-12-12H172c-6.627 0-12 5.373-12 12v96c0 6.627 5.373 12 12 12zm28-80h80v40h-80v-40zm-40 140v-24c0-6.627 5.373-12 12-12h136c6.627 0 12 5.373 12 12v24c0 6.627-5.373 12-12 12H172c-6.627 0-12-5.373-12-12zm192 0v-24c0-6.627 5.373-12 12-12h104c6.627 0 12 5.373 12 12v24c0 6.627-5.373 12-12 12H364c-6.627 0-12-5.373-12-12zm0-144v-24c0-6.627 5.373-12 12-12h104c6.627 0 12 5.373 12 12v24c0 6.627-5.373 12-12 12H364c-6.627 0-12-5.373-12-12zm0 72v-24c0-6.627 5.373-12 12-12h104c6.627 0 12 5.373 12 12v24c0 6.627-5.373 12-12 12H364c-6.627 0-12-5.373-12-12z"
+                                ></path>
+                              </svg>
+                            </span>
+                            <span class="elementor-icon-list-text"
+                              >Press Releases</span
+                            >
+                          </a>
+                        </li>
+                        <li class="elementor-icon-list-item">
+                          <a href="https://arfh-ng.org/annual-reports/">
+                            <span class="elementor-icon-list-icon">
+                              <svg
+                                aria-hidden="true"
+                                class="e-font-icon-svg e-fas-chart-line"
+                                viewBox="0 0 512 512"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M496 384H64V80c0-8.84-7.16-16-16-16H16C7.16 64 0 71.16 0 80v336c0 17.67 14.33 32 32 32h464c8.84 0 16-7.16 16-16v-32c0-8.84-7.16-16-16-16zM464 96H345.94c-21.38 0-32.09 25.85-16.97 40.97l32.4 32.4L288 242.75l-73.37-73.37c-12.5-12.5-32.76-12.5-45.25 0l-68.69 68.69c-6.25 6.25-6.25 16.38 0 22.63l22.62 22.62c6.25 6.25 16.38 6.25 22.63 0L192 237.25l73.37 73.37c12.5 12.5 32.76 12.5 45.25 0l96-96 32.4 32.4c15.12 15.12 40.97 4.41 40.97-16.97V112c.01-8.84-7.15-16-15.99-16z"
+                                ></path>
+                              </svg>
+                            </span>
+                            <span class="elementor-icon-list-text"
+                              >Annual Reports</span
+                            >
+                          </a>
+                        </li>
+                        <li class="elementor-icon-list-item">
+                          <a href="https://arfh-ng.org/projects/">
+                            <span class="elementor-icon-list-icon">
+                              <svg
+                                aria-hidden="true"
+                                class="e-font-icon-svg e-fas-chart-line"
+                                viewBox="0 0 512 512"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M496 384H64V80c0-8.84-7.16-16-16-16H16C7.16 64 0 71.16 0 80v336c0 17.67 14.33 32 32 32h464c8.84 0 16-7.16 16-16v-32c0-8.84-7.16-16-16-16zM464 96H345.94c-21.38 0-32.09 25.85-16.97 40.97l32.4 32.4L288 242.75l-73.37-73.37c-12.5-12.5-32.76-12.5-45.25 0l-68.69 68.69c-6.25 6.25-6.25 16.38 0 22.63l22.62 22.62c6.25 6.25 16.38 6.25 22.63 0L192 237.25l73.37 73.37c12.5 12.5 32.76 12.5 45.25 0l96-96 32.4 32.4c15.12 15.12 40.97 4.41 40.97-16.97V112c.01-8.84-7.15-16-15.99-16z"
+                                ></path>
+                              </svg>
+                            </span>
+                            <span class="elementor-icon-list-text"
+                              >Our Projects</span
+                            >
+                          </a>
+                        </li>
+                        <li class="elementor-icon-list-item">
+                          <a
+                            href="https://arfh-ng.org/category/project-update/"
+                          >
+                            <span class="elementor-icon-list-icon">
+                              <svg
+                                aria-hidden="true"
+                                class="e-font-icon-svg e-fas-chart-line"
+                                viewBox="0 0 512 512"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M496 384H64V80c0-8.84-7.16-16-16-16H16C7.16 64 0 71.16 0 80v336c0 17.67 14.33 32 32 32h464c8.84 0 16-7.16 16-16v-32c0-8.84-7.16-16-16-16zM464 96H345.94c-21.38 0-32.09 25.85-16.97 40.97l32.4 32.4L288 242.75l-73.37-73.37c-12.5-12.5-32.76-12.5-45.25 0l-68.69 68.69c-6.25 6.25-6.25 16.38 0 22.63l22.62 22.62c6.25 6.25 16.38 6.25 22.63 0L192 237.25l73.37 73.37c12.5 12.5 32.76 12.5 45.25 0l96-96 32.4 32.4c15.12 15.12 40.97 4.41 40.97-16.97V112c.01-8.84-7.15-16-15.99-16z"
+                                ></path>
+                              </svg>
+                            </span>
+                            <span class="elementor-icon-list-text"
+                              >Project Updates</span
+                            >
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section
+    data-particle_enable="false"
+    data-particle-mobile-disabled="false"
+    class="elementor-section elementor-top-section elementor-element elementor-element-a6e56fb elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+    data-id="a6e56fb"
+    data-element_type="section"
+    data-settings='{"background_background":"classic"}'
+  >
+    <div class="elementor-container elementor-column-gap-default">
+      <div
+        class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-993abab"
+        data-id="993abab"
+        data-element_type="column"
+      >
+        <div class="elementor-widget-wrap elementor-element-populated">
+          <div
+            class="elementor-element elementor-element-27c7743 elementor-widget elementor-widget-heading"
+            data-id="27c7743"
+            data-element_type="widget"
+            data-widget_type="heading.default"
+          >
+            <div class="elementor-widget-container">
+              <h2 class="elementor-heading-title elementor-size-default">
+                Our Services
+              </h2>
+            </div>
+          </div>
+          <div
+            class="elementor-element elementor-element-51f751d elementor-widget elementor-widget-text-editor"
+            data-id="51f751d"
+            data-element_type="widget"
+            data-widget_type="text-editor.default"
+          >
+            <div class="elementor-widget-container">
+              <style>
+                /*! elementor - v3.23.0 - 05-08-2024 */
+                .elementor-widget-text-editor.elementor-drop-cap-view-stacked
+                  .elementor-drop-cap {
+                  background-color: #69727d;
+                  color: #fff;
+                }
+                .elementor-widget-text-editor.elementor-drop-cap-view-framed
+                  .elementor-drop-cap {
+                  color: #69727d;
+                  border: 3px solid;
+                  background-color: transparent;
+                }
+                .elementor-widget-text-editor:not(
+                    .elementor-drop-cap-view-default
+                  )
+                  .elementor-drop-cap {
+                  margin-top: 8px;
+                }
+                .elementor-widget-text-editor:not(
+                    .elementor-drop-cap-view-default
+                  )
+                  .elementor-drop-cap-letter {
+                  width: 1em;
+                  height: 1em;
+                }
+                .elementor-widget-text-editor .elementor-drop-cap {
+                  float: left;
+                  text-align: center;
+                  line-height: 1;
+                  font-size: 50px;
+                }
+                .elementor-widget-text-editor .elementor-drop-cap-letter {
+                  display: inline-block;
+                }
+              </style>
+              <p>
+                <span style="font-weight: 400"
+                  >No child in Africa should go to sleep hungry and scared- last
+                  year we saved more than 10k lives. This year we are planning
+                  to double this number.</span
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section
+    data-particle_enable="false"
+    data-particle-mobile-disabled="false"
+    class="elementor-section elementor-top-section elementor-element elementor-element-d7281e1 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+    data-id="d7281e1"
+    data-element_type="section"
+    data-settings='{"background_background":"classic"}'
+  >
+    <div class="elementor-container elementor-column-gap-default">
+      <div
+        class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-586a6a4 elementor-invisible"
+        data-id="586a6a4"
+        data-element_type="column"
+        data-settings='{"background_background":"classic","animation":"fadeInLeft"}'
+      >
+        <div class="elementor-widget-wrap elementor-element-populated">
+          <section
+            data-particle_enable="false"
+            data-particle-mobile-disabled="false"
+            class="elementor-section elementor-inner-section elementor-element elementor-element-e4da6ed elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-invisible"
+            data-id="e4da6ed"
+            data-element_type="section"
+            data-settings='{"animation":"fadeInLeft"}'
+          >
+            <div class="elementor-container elementor-column-gap-default">
+              <div
+                class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-30a9c31"
+                data-id="30a9c31"
+                data-element_type="column"
+                data-settings='{"background_background":"classic"}'
+              >
+                <div class="elementor-widget-wrap elementor-element-populated">
+                  <div
+                    class="elementor-element elementor-element-2ec285f elementor-widget elementor-widget-image"
+                    data-id="2ec285f"
+                    data-element_type="widget"
+                    data-widget_type="image.default"
+                  >
+                    <div class="elementor-widget-container">
+                      <img
+                        decoding="async"
+                        width="45"
+                        height="60"
+                        src="https://arfh-ng.org/wp-content/uploads/2019/10/features1-icon5.png"
+                        class="attachment-large size-large wp-image-2942"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-3651f65"
+                data-id="3651f65"
+                data-element_type="column"
+                data-settings='{"background_background":"classic"}'
+              >
+                <div class="elementor-widget-wrap elementor-element-populated">
+                  <div
+                    class="elementor-element elementor-element-6cc8c4e elementor-widget elementor-widget-heading"
+                    data-id="6cc8c4e"
+                    data-element_type="widget"
+                    data-widget_type="heading.default"
+                  >
+                    <div class="elementor-widget-container">
+                      <h2
+                        class="elementor-heading-title elementor-size-default"
+                      >
+                        Providing Food
+                      </h2>
+                    </div>
+                  </div>
+                  <div
+                    class="elementor-element elementor-element-4909b82 elementor-align-left elementor-invisible elementor-widget elementor-widget-button"
+                    data-id="4909b82"
+                    data-element_type="widget"
+                    data-settings='{"_animation":"fadeInDown","_animation_delay":700}'
+                    data-widget_type="button.default"
+                  >
+                    <div class="elementor-widget-container">
+                      <div class="elementor-button-wrapper">
+                        <a
+                          class="elementor-button elementor-button-link elementor-size-sm elementor-animation-float"
+                          href="#"
+                        >
+                          <span class="elementor-button-content-wrapper">
+                            <span class="elementor-button-text">Read More</span>
+                          </span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+      <div
+        class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-1087315 elementor-invisible"
+        data-id="1087315"
+        data-element_type="column"
+        data-settings='{"background_background":"classic","animation":"fadeInUp"}'
+      >
+        <div class="elementor-widget-wrap elementor-element-populated">
+          <section
+            data-particle_enable="false"
+            data-particle-mobile-disabled="false"
+            class="elementor-section elementor-inner-section elementor-element elementor-element-656ebce elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-invisible"
+            data-id="656ebce"
+            data-element_type="section"
+            data-settings='{"animation":"fadeInLeft"}'
+          >
+            <div class="elementor-container elementor-column-gap-default">
+              <div
+                class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-6e11523"
+                data-id="6e11523"
+                data-element_type="column"
+                data-settings='{"background_background":"classic"}'
+              >
+                <div class="elementor-widget-wrap elementor-element-populated">
+                  <div
+                    class="elementor-element elementor-element-44e88e9 elementor-widget elementor-widget-image"
+                    data-id="44e88e9"
+                    data-element_type="widget"
+                    data-widget_type="image.default"
+                  >
+                    <div class="elementor-widget-container">
+                      <img
+                        decoding="async"
+                        width="57"
+                        height="59"
+                        src="https://arfh-ng.org/wp-content/uploads/2019/10/features1-icon3.png"
+                        class="attachment-large size-large wp-image-2943"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-c119e9d"
+                data-id="c119e9d"
+                data-element_type="column"
+                data-settings='{"background_background":"classic"}'
+              >
+                <div class="elementor-widget-wrap elementor-element-populated">
+                  <div
+                    class="elementor-element elementor-element-23eabd4 elementor-widget elementor-widget-heading"
+                    data-id="23eabd4"
+                    data-element_type="widget"
+                    data-widget_type="heading.default"
+                  >
+                    <div class="elementor-widget-container">
+                      <h2
+                        class="elementor-heading-title elementor-size-default"
+                      >
+                        Home Construction
+                      </h2>
+                    </div>
+                  </div>
+                  <div
+                    class="elementor-element elementor-element-fffcf03 elementor-align-left elementor-invisible elementor-widget elementor-widget-button"
+                    data-id="fffcf03"
+                    data-element_type="widget"
+                    data-settings='{"_animation":"fadeInDown","_animation_delay":700}'
+                    data-widget_type="button.default"
+                  >
+                    <div class="elementor-widget-container">
+                      <div class="elementor-button-wrapper">
+                        <a
+                          class="elementor-button elementor-button-link elementor-size-sm elementor-animation-float"
+                          href="#"
+                        >
+                          <span class="elementor-button-content-wrapper">
+                            <span class="elementor-button-text">Read More</span>
+                          </span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+      <div
+        class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-a852e0e elementor-invisible"
+        data-id="a852e0e"
+        data-element_type="column"
+        data-settings='{"background_background":"classic","animation":"fadeInRight"}'
+      >
+        <div class="elementor-widget-wrap elementor-element-populated">
+          <section
+            data-particle_enable="false"
+            data-particle-mobile-disabled="false"
+            class="elementor-section elementor-inner-section elementor-element elementor-element-006efaa elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-invisible"
+            data-id="006efaa"
+            data-element_type="section"
+            data-settings='{"animation":"fadeInRight"}'
+          >
+            <div class="elementor-container elementor-column-gap-default">
+              <div
+                class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-1de4456"
+                data-id="1de4456"
+                data-element_type="column"
+                data-settings='{"background_background":"classic"}'
+              >
+                <div class="elementor-widget-wrap elementor-element-populated">
+                  <div
+                    class="elementor-element elementor-element-5374729 elementor-widget elementor-widget-image"
+                    data-id="5374729"
+                    data-element_type="widget"
+                    data-widget_type="image.default"
+                  >
+                    <div class="elementor-widget-container">
+                      <img
+                        loading="lazy"
+                        decoding="async"
+                        width="45"
+                        height="60"
+                        src=""
+                        class="attachment-large size-large wp-image-2944"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-35ac3cf"
+                data-id="35ac3cf"
+                data-element_type="column"
+                data-settings='{"background_background":"classic"}'
+              >
+                <div class="elementor-widget-wrap elementor-element-populated">
+                  <div
+                    class="elementor-element elementor-element-955bd7e elementor-widget elementor-widget-heading"
+                    data-id="955bd7e"
+                    data-element_type="widget"
+                    data-widget_type="heading.default"
+                  >
+                    <div class="elementor-widget-container">
+                      <h2
+                        class="elementor-heading-title elementor-size-default"
+                      >
+                        Water Supply
+                      </h2>
+                    </div>
+                  </div>
+                  <div
+                    class="elementor-element elementor-element-df6dd4f elementor-align-left elementor-invisible elementor-widget elementor-widget-button"
+                    data-id="df6dd4f"
+                    data-element_type="widget"
+                    data-settings='{"_animation":"fadeInDown","_animation_delay":700}'
+                    data-widget_type="button.default"
+                  >
+                    <div class="elementor-widget-container">
+                      <div class="elementor-button-wrapper">
+                        <a
+                          class="elementor-button elementor-button-link elementor-size-sm elementor-animation-float"
+                          href="#"
+                        >
+                          <span class="elementor-button-content-wrapper">
+                            <span class="elementor-button-text">Read More</span>
+                          </span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section
+    data-particle_enable="false"
+    data-particle-mobile-disabled="false"
+    class="elementor-section elementor-top-section elementor-element elementor-element-0401ed1 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+    data-id="0401ed1"
+    data-element_type="section"
+    data-settings='{"background_background":"classic"}'
+  >
+    <div class="elementor-container elementor-column-gap-default">
+      <div
+        class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-7fb722a elementor-invisible"
+        data-id="7fb722a"
+        data-element_type="column"
+        data-settings='{"background_background":"classic","animation":"fadeInLeft"}'
+      >
+        <div class="elementor-widget-wrap elementor-element-populated">
+          <div
+            class="elementor-element elementor-element-ad4d30b elementor-position-left elementor-vertical-align-bottom elementor-widget elementor-widget-image-box"
+            data-id="ad4d30b"
+            data-element_type="widget"
+            data-widget_type="image-box.default"
+          >
+            <div class="elementor-widget-container">
+              <style>
+                /*! elementor - v3.23.0 - 05-08-2024 */
+                .elementor-widget-image-box .elementor-image-box-content {
+                  width: 100%;
+                }
+                @media (min-width: 768px) {
+                  .elementor-widget-image-box.elementor-position-left
+                    .elementor-image-box-wrapper,
+                  .elementor-widget-image-box.elementor-position-right
+                    .elementor-image-box-wrapper {
+                    display: flex;
+                  }
+                  .elementor-widget-image-box.elementor-position-right
+                    .elementor-image-box-wrapper {
+                    text-align: end;
+                    flex-direction: row-reverse;
+                  }
+                  .elementor-widget-image-box.elementor-position-left
+                    .elementor-image-box-wrapper {
+                    text-align: start;
+                    flex-direction: row;
+                  }
+                  .elementor-widget-image-box.elementor-position-top
+                    .elementor-image-box-img {
+                    margin: auto;
+                  }
+                  .elementor-widget-image-box.elementor-vertical-align-top
+                    .elementor-image-box-wrapper {
+                    align-items: flex-start;
+                  }
+                  .elementor-widget-image-box.elementor-vertical-align-middle
+                    .elementor-image-box-wrapper {
+                    align-items: center;
+                  }
+                  .elementor-widget-image-box.elementor-vertical-align-bottom
+                    .elementor-image-box-wrapper {
+                    align-items: flex-end;
+                  }
+                }
+                @media (max-width: 767px) {
+                  .elementor-widget-image-box .elementor-image-box-img {
+                    margin-left: auto !important;
+                    margin-right: auto !important;
+                    margin-bottom: 15px;
+                  }
+                }
+                .elementor-widget-image-box .elementor-image-box-img {
+                  display: inline-block;
+                }
+                .elementor-widget-image-box .elementor-image-box-title a {
+                  color: inherit;
+                }
+                .elementor-widget-image-box .elementor-image-box-wrapper {
+                  text-align: center;
+                }
+                .elementor-widget-image-box .elementor-image-box-description {
+                  margin: 0;
+                }
+              </style>
+              <div class="elementor-image-box-wrapper">
+                <figure class="elementor-image-box-img">
+                  <img
+                    loading="lazy"
+                    decoding="async"
+                    width="57"
+                    height="59"
+                    src="https://arfh-ng.org/wp-content/uploads/2019/10/features-3-icon2.png"
+                    class="attachment-full size-full wp-image-14"
+                    alt=""
+                  />
+                </figure>
+                <div class="elementor-image-box-content">
+                  <h3 class="elementor-image-box-title">Home Building</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="elementor-element elementor-element-af794b3 elementor-align-center elementor-invisible elementor-widget elementor-widget-button"
+            data-id="af794b3"
+            data-element_type="widget"
+            data-settings='{"_animation":"fadeInDown","_animation_delay":700}'
+            data-widget_type="button.default"
+          >
+            <div class="elementor-widget-container">
+              <div class="elementor-button-wrapper">
+                <a
+                  class="elementor-button elementor-button-link elementor-size-sm elementor-animation-float"
+                  href="#"
+                >
+                  <span class="elementor-button-content-wrapper">
+                    <span class="elementor-button-text">Read More</span>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-ab481a1 elementor-invisible"
+        data-id="ab481a1"
+        data-element_type="column"
+        data-settings='{"background_background":"classic","animation":"fadeInUp"}'
+      >
+        <div class="elementor-widget-wrap elementor-element-populated">
+          <div
+            class="elementor-element elementor-element-257767a elementor-position-left elementor-vertical-align-bottom elementor-widget elementor-widget-image-box"
+            data-id="257767a"
+            data-element_type="widget"
+            data-widget_type="image-box.default"
+          >
+            <div class="elementor-widget-container">
+              <div class="elementor-image-box-wrapper">
+                <figure class="elementor-image-box-img">
+                  <img
+                    loading="lazy"
+                    decoding="async"
+                    width="45"
+                    height="60"
+                    src="https://arfh-ng.org/wp-content/uploads/2019/10/features-3-icon4.png"
+                    class="attachment-full size-full wp-image-15"
+                    alt=""
+                  />
+                </figure>
+                <div class="elementor-image-box-content">
+                  <h3 class="elementor-image-box-title">Family Planning</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="elementor-element elementor-element-b193e81 elementor-align-center elementor-invisible elementor-widget elementor-widget-button"
+            data-id="b193e81"
+            data-element_type="widget"
+            data-settings='{"_animation":"fadeInDown","_animation_delay":700}'
+            data-widget_type="button.default"
+          >
+            <div class="elementor-widget-container">
+              <div class="elementor-button-wrapper">
+                <a
+                  class="elementor-button elementor-button-link elementor-size-sm elementor-animation-float"
+                  href="#"
+                >
+                  <span class="elementor-button-content-wrapper">
+                    <span class="elementor-button-text">Read More</span>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-369fee0 elementor-invisible"
+        data-id="369fee0"
+        data-element_type="column"
+        data-settings='{"background_background":"classic","animation":"fadeInRight"}'
+      >
+        <div class="elementor-widget-wrap elementor-element-populated">
+          <div
+            class="elementor-element elementor-element-5f167b9 elementor-position-left elementor-vertical-align-bottom elementor-widget elementor-widget-image-box"
+            data-id="5f167b9"
+            data-element_type="widget"
+            data-widget_type="image-box.default"
+          >
+            <div class="elementor-widget-container">
+              <div class="elementor-image-box-wrapper">
+                <figure class="elementor-image-box-img">
+                  <img
+                    loading="lazy"
+                    decoding="async"
+                    width="47"
+                    height="60"
+                    src="https://arfh-ng.org/wp-content/uploads/2019/10/features-3-icon3.png"
+                    class="attachment-full size-full wp-image-16"
+                    alt=""
+                  />
+                </figure>
+                <div class="elementor-image-box-content">
+                  <h3 class="elementor-image-box-title">Medical Care</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="elementor-element elementor-element-a8c190c elementor-align-center elementor-invisible elementor-widget elementor-widget-button"
+            data-id="a8c190c"
+            data-element_type="widget"
+            data-settings='{"_animation":"fadeInDown","_animation_delay":700}'
+            data-widget_type="button.default"
+          >
+            <div class="elementor-widget-container">
+              <div class="elementor-button-wrapper">
+                <a
+                  class="elementor-button elementor-button-link elementor-size-sm elementor-animation-float"
+                  href="#"
+                >
+                  <span class="elementor-button-content-wrapper">
+                    <span class="elementor-button-text">Read More</span>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+{% endblock content %}

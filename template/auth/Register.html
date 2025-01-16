@@ -1,0 +1,110 @@
+{% extends "./base.html" %} {% block conrent %}
+<div class="all-wrapper menu-side with-pattern pt-5">
+  <div class="auth-box-w">
+    <div class="logo-w">
+      <a href="/"
+        ><img
+          alt="{{site.name}}"
+          src="{{site.logo}}"
+          width="150"
+          height=""
+      /></a>
+    </div>
+    <h4 class="auth-header">Member Admin</h4>
+    <div class="woocommerce-notices-wrapper"></div>
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+       
+      <div class="form-group">
+        <label for="email">Email&nbsp;<span class="required">*</span></label>
+        <input
+          required
+          class="form-control"
+          type="email"
+          name="email"
+          id="email"
+          autocomplete="email"
+        />
+        <div class="row" style="position: absolute">
+          <div
+            hidden="hidden"
+            style="color: red; background-color: white; z-index: 1000"
+            class="col-md-12 col-sm-12 col-lg-6"
+            id="email_error"
+          ></div>
+        </div>
+      </div>
+    
+       
+      <div class="form-group">
+        <label for="username"
+          >Username&nbsp;<span class="required">*</span></label
+        >
+        <input
+          required
+          class="form-control"
+          type="text"
+          id="username"
+          name="username"
+          autocomplete="username"
+        />
+      </div>
+      <div class="form-group">
+        <label for="password"
+          >Password&nbsp;<span class="required">*</span></label
+        >
+        <input
+          required
+          class="form-control"
+          type="password"
+          onkeyup="checkPLenght()"
+          name="password"
+          id="password"
+          autocomplete="current-password"
+        />
+        <div class="row" style="position: absolute">
+          <div
+            hidden="hidden"
+            style="color: red; background-color: white; z-index: 1000"
+            class="col-xs-12 col-sm-12 col-lg-6"
+            id="pass_error"
+          ></div>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="password2"
+          >Re-Password&nbsp;<span class="required">*</span></label
+        >
+        <input
+          required
+          class="form-control"
+          onkeyup="checkPassword()"
+          type="password"
+          name="password2"
+          id="password2"
+          autocomplete="password"
+        />
+        <div class="row" style="position: absolute">
+          <div
+            hidden="hidden"
+            style="color: red; background-color: white; z-index: 1000"
+            class="col-md-12 col-sm-12 col-lg-6"
+            id="con_pass_error"
+          ></div>
+        </div>
+      </div>
+      
+      <div class="buttons-w">
+        <button type="submit" class="btn btn-primary" name="account_setup">
+          Register
+        </button>
+        <div class="form-check-inline">
+          <a href="{% url 'Loginuser' %}"
+            >Login Here?</a
+          >
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+{% endblock conrent %}

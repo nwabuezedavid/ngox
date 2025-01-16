@@ -1,0 +1,235 @@
+{% extends './base.html' %}
+{% load static %}
+{% block body %}
+    <!-- Navbar End -->
+
+
+    <!-- Page Header Start -->
+    <div class="container-fluid page-header py-5 mb-5">
+        <div class="container py-5">
+            <h1 class="display-3 text-white mb-3 animated slideInDown">Projects</h1>
+            <nav aria-label="breadcrumb animated slideInDown">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a class="text-white" href="#">Home</a></li>
+                    <li class="breadcrumb-item"><a class="text-white" href="#">Pages</a></li>
+                    <li class="breadcrumb-item text-white active" aria-current="page">Projects</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <!-- Page Header End -->
+
+
+    <!-- Projects Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+          <div
+            class="text-center mx-auto mb-5 wow fadeInUp"
+            data-wow-delay="0.1s"
+            style="max-width: 600px"
+          >
+            <h6 class="text-primary">Our Projects</h6>
+            <h1 class="mb-4">Visit Our Latest Solar And Renewable Energy Projects</h1>
+          </div>
+          <div class="row mt-n2 wow fadeInUp" data-wow-delay="0.3s">
+            <div class="col-12 text-center">
+              <ul class="list-inline mb-5" id="portfolio-flters">
+                <li class="mx-2 active" data-filter="*">All</li>
+                <li class="mx-2" data-filter=".first">Solar Panels</li>
+                <li class="mx-2" data-filter=".second">Wind Turbines</li>
+                <li class="mx-2" data-filter=".third">Hydropower Plants</li>
+              </ul>
+            </div>
+          </div>
+          <div class="row g-4 portfolio-container wow fadeInUp" data-wow-delay="0.5s">
+            <div class="col-lg-4 col-md-6 portfolio-item first">
+              <div class="portfolio-img rounded overflow-hidden">
+                <img
+                  class="img-fluid"
+                  src="{% static 'img/img-600x400-6.jpg'%}"
+                  alt=""
+                />
+                <div class="portfolio-btn">
+                  <a
+                    class="btn btn-lg-square btn-outline-light rounded-circle mx-1"
+                    href="{% static 'img/img-600x400-6.jpg'%}"
+                    data-lightbox="portfolio"
+                    ><i class="fa fa-eye"></i
+                  ></a>
+                  <a
+                    class="btn btn-lg-square btn-outline-light rounded-circle mx-1"
+                    href=""
+                    ><i class="fa fa-link"></i
+                  ></a>
+                </div>
+              </div>
+              <div class="pt-3">
+                <p class="text-primary mb-0">Solar Panels</p>
+                <hr class="text-primary w-25 my-2" />
+                <h5 class="lh-base">
+                  Our mission is to revolutionize the future with cutting-edge renewable energy technologies.
+                </h5>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 portfolio-item second">
+              <div class="portfolio-img rounded overflow-hidden">
+                <img
+                  class="img-fluid"
+                  src="https://img.freepik.com/premium-photo/engineer-charge-solar-panel-installation-installation-solar-energy_1214049-114.jpg?ga=GA1.1.753374989.1717678999&semt=ais_hybrid"
+                  alt=""
+                />
+                <div class="portfolio-btn">
+                  <a
+                    class="btn btn-lg-square btn-outline-light rounded-circle mx-1"
+                    href="https://img.freepik.com/premium-photo/engineer-charge-solar-panel-installation-installation-solar-energy_1214049-114.jpg?ga=GA1.1.753374989.1717678999&semt=ais_hybrid"
+                    data-lightbox="portfolio"
+                    ><i class="fa fa-eye"></i
+                  ></a>
+                  <a
+                    class="btn btn-lg-square btn-outline-light rounded-circle mx-1"
+                    href=""
+                    ><i class="fa fa-link"></i
+                  ></a>
+                </div>
+              </div>
+              <div class="pt-3">
+                <p class="text-primary mb-0">Wind Turbines</p>
+                <hr class="text-primary w-25 my-2" />
+                <h5 class="lh-base">
+                  We lead the way in advancing sustainable energy solutions through innovation and expertise.
+                </h5>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 portfolio-item third">
+              <div class="portfolio-img rounded overflow-hidden">
+                <img
+                  class="img-fluid"
+                  src="https://img.freepik.com/free-photo/solar-photovoltaic-panels-station-checks-with-tablet-computer_1150-18191.jpg?ga=GA1.1.753374989.1717678999"
+                  alt=""
+                />
+                <div class="portfolio-btn">
+                  <a
+                    class="btn btn-lg-square btn-outline-light rounded-circle mx-1"
+                    href="https://img.freepik.com/free-photo/solar-photovoltaic-panels-station-checks-with-tablet-computer_1150-18191.jpg?ga=GA1.1.753374989.1717678999"
+                    data-lightbox="portfolio"
+                    ><i class="fa fa-eye"></i
+                  ></a>
+                  <a
+                    class="btn btn-lg-square btn-outline-light rounded-circle mx-1"
+                    href=""
+                    ><i class="fa fa-link"></i
+                  ></a>
+                </div>
+              </div>
+              <div class="pt-3">
+                <p class="text-primary mb-0">Hydropower Plants</p>
+                <hr class="text-primary w-25 my-2" />
+                <h5 class="lh-base">
+                  We are committed to driving progress in the renewable energy sector with unmatched dedication.
+                </h5>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 portfolio-item first">
+              <div class="portfolio-img rounded overflow-hidden">
+                <img
+                  class="img-fluid"
+                  src="https://media.istockphoto.com/id/1222813535/photo/male-worker-repairing-photovoltaic-solar-panel.jpg?b=1&s=612x612&w=0&k=20&c=QiTquPLYteP0p-2WFnU17w7Tmd8VjO6xHU2-980gNmU="
+                  alt=""
+                />
+                <div class="portfolio-btn">
+                  <a
+                    class="btn btn-lg-square btn-outline-light rounded-circle mx-1"
+                    href="https://media.istockphoto.com/id/1222813535/photo/male-worker-repairing-photovoltaic-solar-panel.jpg?b=1&s=612x612&w=0&k=20&c=QiTquPLYteP0p-2WFnU17w7Tmd8VjO6xHU2-980gNmU="
+                    data-lightbox="portfolio"
+                    ><i class="fa fa-eye"></i
+                  ></a>
+                  <a
+                    class="btn btn-lg-square btn-outline-light rounded-circle mx-1"
+                    href=""
+                    ><i class="fa fa-link"></i
+                  ></a>
+                </div>
+              </div>
+              <div class="pt-3">
+                <p class="text-primary mb-0">Solar Panels</p>
+                <hr class="text-primary w-25 my-2" />
+                <h5 class="lh-base">
+                  Empowering communities worldwide, we set new standards in the solar energy industry.
+                </h5>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 portfolio-item second">
+              <div class="portfolio-img rounded overflow-hidden">
+                <img
+                  class="img-fluid"
+                  src="https://img.freepik.com/premium-photo/remote-renewable-energy-setup-featuring-solar-panels-wind-turbines-transparent-white-background_947814-233453.jpg?ga=GA1.1.753374989.1717678999&semt=ais_hybrid"
+                  alt=""
+                />
+                <div class="portfolio-btn">
+                  <a
+                    class="btn btn-lg-square btn-outline-light rounded-circle mx-1"
+                    href="https://img.freepik.com/premium-photo/remote-renewable-energy-setup-featuring-solar-panels-wind-turbines-transparent-white-background_947814-233453.jpg?ga=GA1.1.753374989.1717678999&semt=ais_hybrid"
+                    data-lightbox="portfolio"
+                    ><i class="fa fa-eye"></i
+                  ></a>
+                  <a
+                    class="btn btn-lg-square btn-outline-light rounded-circle mx-1"
+                    href=""
+                    ><i class="fa fa-link"></i
+                  ></a>
+                </div>
+              </div>
+              <div class="pt-3">
+                <p class="text-primary mb-0">Wind Turbines</p>
+                <hr class="text-primary w-25 my-2" />
+                <h5 class="lh-base">
+                  As trailblazers in solar power, we are shaping a cleaner and greener tomorrow.
+                </h5>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 portfolio-item third">
+              <div class="portfolio-img rounded overflow-hidden">
+                <img
+                  class="img-fluid"
+                  src="{% static 'img/img-600x400-1.jpg'%}"
+                  alt=""
+                />
+                <div class="portfolio-btn">
+                  <a
+                    class="btn btn-lg-square btn-outline-light rounded-circle mx-1"
+                    href="{% static 'img/img-600x400-1.jpg'%}"
+                    data-lightbox="portfolio"
+                    ><i class="fa fa-eye"></i
+                  ></a>
+                  <a
+                    class="btn btn-lg-square btn-outline-light rounded-circle mx-1"
+                    href=""
+                    ><i class="fa fa-link"></i
+                  ></a>
+                </div>
+              </div>
+              <div class="pt-3">
+                <p class="text-primary mb-0">Hydropower Plants</p>
+                <hr class="text-primary w-25 my-2" />
+                <h5 class="lh-base">
+                  We Are pioneers of solar & renewable energy industry
+                </h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- Projects End -->
+
+
+    <!-- Quote Start -->
+{% include 'quates.html' %}
+ 
+    <!-- Quote End -->
+
+
+    <!-- Testimonial Start --> 
+        {% include 'testi.html' %}
+
+    <!-- Testimonial End -->
+    {% endblock body %}

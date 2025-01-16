@@ -1,0 +1,59 @@
+
+
+
+
+{% load static %}
+
+<div class="container-fluid bg-light overflow-hidden my-5 px-lg-0">
+    <div class="container quote px-lg-0">
+        <div class="row g-0 mx-lg-0">
+            <div class="col-lg-6 ps-lg-0 wow fadeIn" data-wow-delay="0.1s" style="min-height: 400px;">
+                <div class="position-relative h-100">
+                    <img class="position-absolute img-fluid w-100 h-100" src="{% static 'img/quote.jpg'%}" style="object-fit: cover;" alt="">
+                </div>
+            </div>
+            <div class="col-lg-6 quote-text py-5 wow fadeIn" data-wow-delay="0.5s">
+                <div class="p-lg-5 pe-lg-0">
+                    <h6 class="text-primary">Free Quote</h6>
+                    <h1 class="mb-4">Get A Free Quote</h1>
+                    <p class="mb-4 pb-2">Are you considering switching to solar energy? We offer free, no-obligation quotes tailored to your specific needs. Our team is here to guide you through the process and provide you with all the information you need to make an informed decision.</p>
+                    <form method="post" >
+                        {% csrf_token %}
+                        <div class="row g-3">
+                            <div class="col-12 col-sm-6">
+                                <input type="text" name="name" class="form-control border-0" placeholder="Your Name" style="height: 55px;">
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <input type="email" name="email" class="form-control border-0" placeholder="Your Email" style="height: 55px;">
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <input type="text" name="mobile" class="form-control border-0" placeholder="Your Mobile" style="height: 55px;">
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <select name="service" class="form-select border-0" style="height: 55px;">
+                                    <option selected="">Select A Service</option>
+                                    <option value="solar-installation">Solar Panel Installation</option>
+                                    <option value="solar-maintenance">Solar System Maintenance</option>
+                                    <option value="solar-consultation">Solar Energy Consultation</option>
+                                    <option value="energy-audit">Energy Audit Services</option>
+                                    <option value="financing-options">Financing Options</option>
+                                    <option value="solar-design">Custom Solar System Design</option>
+                                    <option value="battery-storage">Battery Storage Solutions</option>
+                                    <option value="commercial-services">Commercial Solar Solutions</option>
+                                    <option value="residential-services">Residential Solar Solutions</option>
+                                </select>
+                                
+                            </div>
+                            <div class="col-12">
+                                <textarea name="special_note" class="form-control border-0" placeholder="Special Note"></textarea>
+                            </div>
+                            <div class="col-12">
+                                <button type="submit"  class="btn btn-primary rounded-pill py-3 px-5" type="submit">Submit</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,203 @@
+{% extends 'base.html' %} {% load static %} {% block content %}
+
+<link
+  rel="stylesheet"
+  id="wpo_min-header-0-css"
+  href="https://arfh-ng.org/wp-content/cache/wpo-minify/1730210395/assets/wpo-minify-header-c8521445.min.css"
+  media="all"
+/>
+
+<div
+  data-elementor-type="wp-page"
+  data-elementor-id="2834"
+  class="elementor elementor-2834"
+  data-elementor-post-type="page"
+>
+  <section
+    data-particle_enable="true"
+    class="eael-section-particles-47c43fe elementor-section elementor-top-section elementor-element elementor-element-47c43fe elementor-section-boxed elementor-section-height-default elementor-section-height-default eael-particles-section"
+    data-eael_ptheme_source="presets"
+    data-preset_theme="nasa"
+    data-custom_style=""
+    data-particle-mobile-disabled="false"
+    data-id="47c43fe"
+    data-element_type="section"
+    data-settings='{"background_background":"classic"}'
+    id="eael-section-particles-47c43fe"
+  >
+    <div class="elementor-background-overlay"></div>
+    <div class="elementor-container elementor-column-gap-default">
+      <div
+        class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-dfb9835"
+        data-id="dfb9835"
+        data-element_type="column"
+      >
+        <div class="elementor-widget-wrap elementor-element-populated">
+          <div
+            class="elementor-element elementor-element-495f1ba elementor-widget elementor-widget-heading animated fadeInDown"
+            data-id="495f1ba"
+            data-element_type="widget"
+            data-settings='{"_animation":"fadeInDown","_animation_delay":300}'
+            data-widget_type="heading.default"
+          >
+            <div class="elementor-widget-container">
+              <h1 class="elementor-heading-title elementor-size-default">
+                Our Team
+              </h1>
+            </div>
+          </div>
+          <div
+            class="elementor-element elementor-element-42fe1da elementor-widget elementor-widget-text-editor"
+            data-id="42fe1da"
+            data-element_type="widget"
+            data-widget_type="text-editor.default"
+          >
+            <div class="elementor-widget-container">
+              <p><em>The People Making Things Work</em></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <canvas
+      class="particles-js-canvas-el"
+      width="1894"
+      height="604"
+      style="width: 100%; height: 100%"
+    ></canvas>
+  </section>
+  <style>
+    .elementor-element-47c43fe.eael-particles-section > canvas {
+      z-index: -1;
+      position: absolute;
+      top: 0;
+    }
+  </style>
+  <main class="flex w-full flex-wrap item-center justify-center">
+    <section
+      data-particle_enable="false"
+      data-particle-mobile-disabled="false"
+      class="elementor-section elementor-top-section elementor-element elementor-element-2be614d elementor-hidden-tablet elementor-hidden-phone elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+      data-id="2be614d"
+      data-element_type="section"
+      data-settings='{"background_background":"classic"}'
+    >
+      <div
+        class="elementor-container elementor-column-gap-default flex flex-wrap gap-2"
+      >
+        {% for i in teams %}
+
+        <div
+          class="make-column-clickable-elementor  elementor-column  elementor-col-25 elementor-top-column elementor-element elementor-element-b0d2632 animated fadeInLeft"
+          style="cursor: pointer"
+          data-column-clickable-blank="_self"
+
+          data-id="b0d2632"
+          data-element_type="column"
+          data-settings='{"background_background":"classic","animation":"fadeInLeft","animation_delay":600}'
+        >
+        <div class="elementor-widget-wrap elementor-element-populated relative" style="background-image: url('{{i.image}}') !important;">
+            <div class="elementor-background-overlay"></div>
+            <div
+              class="elementor-element elementor-element-9ee27d2 elementor-widget elementor-widget-heading"
+              data-id=""
+              data-element_type="widget"
+              data-widget_type="heading.default"
+            >
+              <div class="elementor-widget-container">
+                <h1 class="elementor-heading-title elementor-size-default">
+                
+                </h1>
+              </div>
+            </div>
+            <div
+              class="elementor-element elementor-element-4cf99cc elementor-widget elementor-widget-text-editor"
+              data-id="4cf99cc"
+              data-element_type="widget"
+              data-widget_type="text-editor.default"
+            >
+              <div class="elementor-widget-container">
+                <p>  {{i.name}}</p>
+              </div>
+            </div>
+            <div
+              class="elementor-element elementor-element-9492148 elementor-widget elementor-widget-text-editor"
+              data-id="9492148"
+              data-element_type="widget"
+              data-widget_type="text-editor.default"
+            >
+              <div class="elementor-widget-container">
+                <p>{{i.position}} <br />{{site.name}}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+        <div
+          class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-efbf786 animated fadeInUp"
+          data-id="efbf786"
+          data-element_type="column"
+          data-settings='{"background_background":"classic","animation":"fadeInUp","animation_delay":400}'
+        >
+          <div class="elementor-widget-wrap elementor-element-populated">
+            <div class="elementor-background-overlay"></div>
+            <div
+              class="elementor-element elementor-element-82bee9c elementor-widget elementor-widget-heading"
+              data-id="82bee9c"
+              data-element_type="widget"
+              data-widget_type="heading.default"
+            >
+              <div class="elementor-widget-container">
+                <h2 class="elementor-heading-title elementor-size-default">
+                  They Are Saving Lives Today
+                </h2>
+              </div>
+            </div>
+            <div
+              class="elementor-element elementor-element-1f46dbc elementor-widget elementor-widget-text-editor"
+              data-id="1f46dbc"
+              data-element_type="widget"
+              data-widget_type="text-editor.default"
+            >
+              <div class="elementor-widget-container">
+                <p>Join them and see what you too can do.</p>
+              </div>
+            </div>
+            <div
+              class="elementor-element elementor-element-42043d9 elementor-align-left elementor-widget elementor-widget-button animated fadeInDown"
+              data-id="42043d9"
+              data-element_type="widget"
+              data-settings='{"_animation":"fadeInDown","_animation_delay":700}'
+              data-widget_type="button.default"
+            >
+              <div class="elementor-widget-container">
+                <div class="elementor-button-wrapper">
+                  <a
+                    class="elementor-button elementor-button-link elementor-size-sm"
+                    href="{% url 'partner' %}"
+                  >
+                    <span class="elementor-button-content-wrapper">
+                      <span class="elementor-button-text">Partner Now</span>
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+ 
+  <div
+    data-particle_enable="false"
+    data-particle-mobile-disabled="false"
+    class="elementor-element elementor-element-8a3b989 e-flex e-con-boxed e-con e-parent e-lazyloaded"
+    data-id="8a3b989"
+    data-element_type="container"
+  >
+    <div class="e-con-inner"></div>
+  </div>
+</div>
+
+{% endblock content %}
