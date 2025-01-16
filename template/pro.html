@@ -162,9 +162,9 @@
               data-widget_type="text-editor.default"
             >
               <div class="elementor-widget-container">
-                <pre>
-                  {{item.body}}
-                </pre>
+                <section class="w-full">
+                  {{item.body|safe}}
+                </section>
                 <span class="w-full flex flex-wrap gap-3">
                   <img src="{{item.image1}}" class="w-full h-1/2 flex max-h-[300px] object-fit" />
                   <p>{{item.header}}</p>
